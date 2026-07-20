@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+  namespace: flask-example
+spec:
+  selector:
+    matchLabels:
+      app: flask-pod
+  template:
+    metadata:
+      labels:
+        app: flask-pod
+    spec:
+      containers:
+        - name: flask-container
+          image: 10.42.0.1:5000/flask-example:185bafa7e754b2a0e4f2ab464bd881d585ce792c
+          ports:
+            - containerPort: 8080
+              hostPort: 7080
