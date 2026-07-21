@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask-container
-          image: 10.42.0.1:5000/flask-example:185bafa7e754b2a0e4f2ab464bd881d585ce792c
+          image: 10.42.0.1:5000/flask-example:0ed8fdc482512c9de7aa1a7f66a68516d0216cc0
           ports:
             - containerPort: 8080
               hostPort: 7080
