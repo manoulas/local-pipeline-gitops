@@ -18,4 +18,3 @@ spec:
           image: 10.42.0.1:5000/flask-example:f0590efddc2ca26e102097273c0a5fe1e3858687
           ports:
             - containerPort: 8080
-              hostPort: 7080
